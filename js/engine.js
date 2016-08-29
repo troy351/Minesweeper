@@ -96,7 +96,7 @@ define(['exports', 'js/block'], function (exports, _block) {
                 this._levelSel = document.createElement('div');
                 this._levelSel.className = 'custom-level';
                 this._levelSel.innerHTML = '\n            <form>\n                <p>Width: <input type="text" title="width"></p>\n                <p>Height: <input type="text" title="height"></p>\n                <p>Mines: <input type="text" title="mines"></p>\n                <div><input type="submit" value="Submit"></div>\n                <div><input type="button" value="Cancel"></div>\n            </form>';
-                document.body.appendChild(this._levelSel);
+                this.gameArea.appendChild(this._levelSel);
 
                 var mainGame = document.createElement('div');
                 mainGame.className = 'main-game';

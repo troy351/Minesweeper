@@ -170,39 +170,41 @@ body {
   border-bottom: 4px solid white;
   border-right: 4px solid white;
 }
-.custom-level {
+#minesweeper .custom-level {
   display: none;
   position: absolute;
   width: 180px;
   left: 50%;
-  top: 170px;
+  top: 50%;
   margin-left: -102px;
+  margin-top: -80px;
   padding: 10px;
   font-size: 14px;
   background-color: #ece9d8;
   border: 2px solid #0055e5;
   border-radius: 5px;
+  z-index: 1;
 }
-.custom-level p {
+#minesweeper .custom-level p {
   width: 100px;
   margin: 10px 0;
   line-height: 24px;
   font-size: 14px;
 }
-.custom-level p input {
+#minesweeper .custom-level p input {
   float: right;
-  width: 40px;
+  width: 38px;
   padding: 1px;
   margin-left: 10px;
   font-size: 14px;
   border: 1px solid #7f9db9;
 }
-.custom-level div {
+#minesweeper .custom-level div {
   position: absolute;
   left: 130px;
   top: 40px;
 }
-.custom-level div:last-child {
+#minesweeper .custom-level div:last-child {
   top: 75px;
 }
 /* for mobile screen */

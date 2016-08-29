@@ -54,7 +54,7 @@ export default class MineSweeper {
                 <div><input type="submit" value="Submit"></div>
                 <div><input type="button" value="Cancel"></div>
             </form>`;
-        document.body.appendChild(this._levelSel);
+        this.gameArea.appendChild(this._levelSel);
 
         const mainGame = document.createElement('div');
         mainGame.className = 'main-game';
