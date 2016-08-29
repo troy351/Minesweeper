@@ -1,0 +1,6 @@
+{
+  "name": "Minesweeper",
+  "tagline": "A Minesweeper game made by troy",
+  "body": "## Overview\r\nGame Minesweeper, made by Troy.\r\n\r\n* max size: 30 x 24\r\n* min size: 9 x 9\r\n* easy : 9 x 9 - 10\r\n* normal : 16 x 16 - 40\r\n* hard : 30 x 16 - 99\r\n\r\n**totalBlocks / 8 <= totalMines <= totalBlocks / 4**",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
