@@ -7,6 +7,9 @@ export default class MineSweeper {
         this._initGame();
         this.setLevel('Easy');
         this._startGame();
+
+        // mobile browser delay to show map
+        setTimeout(this._initMap, 1000);
     }
 
     _initGame() {
@@ -313,8 +316,6 @@ export default class MineSweeper {
             let touchCancel = false;
             let touchMethod = null;
             // allow one block offset
-            console.log(Math.abs(lastTouchCoor.i - coor.i) + Math.abs(lastTouchCoor.j - coor.j));
-            console.log(Date.now() - lastTouchTime);
             if ((Math.abs(lastTouchCoor.i - coor.i) + Math.abs(lastTouchCoor.j - coor.j) < 2) && Date.now() - lastTouchTime < timeGap) {
                 // double touch
                 clearTimeout(timer);
